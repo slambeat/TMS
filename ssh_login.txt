@@ -1,0 +1,18 @@
+Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.19.0-32-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Introducing Expanded Security Maintenance for Applications.
+   Receive updates to over 25,000 software packages with your
+   Ubuntu Pro subscription. Free for personal use.
+
+     https://ubuntu.com/pro
+
+15 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Last login: Tue Feb 21 14:48:39 2023 from 192.168.1.35
+
+dmitriy_zh@TMS-Test:~$ 
