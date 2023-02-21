@@ -1,0 +1,443 @@
+dmitriy_zh@TMS-Test:~$ top
+top - 16:31:52 up  2:05,  4 users,  load average: 0,09, 0,05, 0,02
+Tasks: 207 total,   1 running, 206 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0,0 us,  0,0 sy,  0,0 ni,100,0 id,  0,0 wa,  0,0 hi,  0,0 si,  0,0 st
+MiB Mem :   1975,5 total,    590,6 free,    565,9 used,    819,0 buff/cache
+MiB Swap:   2140,0 total,   2140,0 free,      0,0 used.   1251,5 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+top - 16:31:53 up  2:05,  4 users,  load average: 0,08, 0,05, 0,02
+Tasks: 209 total,   1 running, 207 sleeping,   0 stopped,   1 zombie
+%Cpu(s):  3,2 us,  3,2 sy,  0,0 ni, 93,7 id,  0,0 wa,  0,0 hi,  0,0 si,  0,0 st
+MiB Mem :   1975,5 total,    590,6 free,    565,9 used,    819,0 buff/cache
+MiB Swap:   2140,0 total,   2140,0 free,      0,0 used.   1251,5 avail Mem
+
+top - 16:31:58 up  2:05,  4 users,  load average: 0,08, 0,04, 0,02
+Tasks: 207 total,   1 running, 206 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3,8 us,  1,9 sy,  0,0 ni, 94,3 id,  0,0 wa,  0,0 hi,  0,0 si,  0,0 st
+MiB Mem :   1975,5 total,    590,6 free,    565,9 used,    819,0 buff/cache
+MiB Swap:   2140,0 total,   2140,0 free,      0,0 used.   1251,5 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  92955 dmitriy+  20   0   17728   8588   5884 S   0,5   0,4   0:00.30 sshd
+ 206624 dmitriy+  20   0   24460   4496   3544 R   0,5   0,2   0:00.03 top
+      1 root      20   0  101284  11920   8248 S   0,0   0,6   0:01.86 systemd
+      2 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 netns
+      8 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 I   0,0   0,0   0:00.00 rcu_tasks_kthread
+     12 root      20   0       0      0      0 I   0,0   0,0   0:00.00 rcu_tasks_rude_kthread
+     13 root      20   0       0      0      0 I   0,0   0,0   0:00.00 rcu_tasks_trace_kthread
+     14 root      20   0       0      0      0 S   0,0   0,0   0:03.23 ksoftirqd/0
+     15 root      20   0       0      0      0 I   0,0   0,0   0:01.50 rcu_preempt
+     16 root      rt   0       0      0      0 S   0,0   0,0   0:00.09 migration/0
+     17 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/0
+     19 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/0
+     20 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kdevtmpfs
+     21 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 inet_frag_wq
+     22 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kauditd
+     23 root      20   0       0      0      0 S   0,0   0,0   0:00.00 khungtaskd
+     24 root      20   0       0      0      0 S   0,0   0,0   0:00.00 oom_reaper
+     27 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 writeback
+     28 root      20   0       0      0      0 S   0,0   0,0   0:00.60 kcompactd0
+     29 root      25   5       0      0      0 S   0,0   0,0   0:00.00 ksmd
+     30 root      39  19       0      0      0 S   0,0   0,0   0:00.05 khugepaged
+     31 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kintegrityd
+     32 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kblockd
+     33 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 blkcg_punt_bio
+     34 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 tpm_dev_wq
+     35 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 ata_sff
+     36 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 md
+     37 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 edac-poller
+     38 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 devfreq_wq
+     39 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 watchdogd
+     40 root       0 -20       0      0      0 I   0,0   0,0   0:01.76 kworker/0:1H-kblockd
+     41 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kswapd0
+     42 root      20   0       0      0      0 S   0,0   0,0   0:00.00 ecryptfs-kthread
+     48 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kthrotld
+     52 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 acpi_thermal_pm
+     53 root      20   0       0      0      0 S   0,0   0,0   0:00.00 xenbus_probe
+     54 root      20   0       0      0      0 S   0,0   0,0   0:00.01 scsi_eh_0
+     55 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 scsi_tmf_0
+     56 root      20   0       0      0      0 S   0,0   0,0   0:00.00 scsi_eh_1
+     57 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 scsi_tmf_1
+     58 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 vfio-irqfd-clea
+     60 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 mld
+     61 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 ipv6_addrconf
+     66 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kstrp
+     72 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 zswap-shrink
+     73 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/u3:0
+    119 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 charger_manager
+    159 root      20   0       0      0      0 S   0,0   0,0   0:00.01 scsi_eh_2
+    160 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 scsi_tmf_2
+    186 root      20   0       0      0      0 S   0,0   0,0   0:00.25 jbd2/sda3-8
+    187 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 ext4-rsv-conver
+    226 root      19  -1   89120  51608  50084 S   0,0   2,6   0:05.73 systemd-journal
+    273 root      20   0   27104   7276   4624 S   0,0   0,4   0:00.18 systemd-udevd
+    284 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 irq/18-vmwgfx
+    285 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 card0-crtc0
+    286 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 card0-crtc1
+    287 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 card0-crtc2
+    288 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 card0-crtc3
+    289 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 card0-crtc4
+    290 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 card0-crtc5
+    291 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 card0-crtc6
+    292 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 card0-crtc7
+    335 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 cryptd
+    568 systemd+  20   0   14828   6192   5400 S   0,0   0,3   0:10.39 systemd-oomd
+    569 systemd+  20   0   25260  12404   8464 S   0,0   0,6   0:00.12 systemd-resolve
+    570 systemd+  20   0   89380   6568   5704 S   0,0   0,3   0:00.06 systemd-timesyn
+    624 root      20   0  251260   8124   7096 S   0,0   0,4   0:00.80 accounts-daemon
+    625 root      20   0    2812   1140   1048 S   0,0   0,1   0:00.00 acpid
+    628 avahi     20   0    7628   3664   3320 S   0,0   0,2   0:00.99 avahi-daemon
+    629 root      20   0   20680   3152   2896 S   0,0   0,2   0:00.01 cron
+    630 message+  20   0   10912   6304   4084 S   0,0   0,3   0:00.42 dbus-daemon
+dmitriy_zh@TMS-Test:~$ free
+               total        used        free      shared  buff/cache   available
+Mem:         2022916      579440      604808       13576      838668     1281576
+Swap:        2191356           0     2191356
+dmitriy_zh@TMS-Test:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           198M  1,6M  197M   1% /run
+/dev/sda3        20G   12G  6,4G  65% /
+tmpfs           988M     0  988M   0% /dev/shm
+tmpfs           5,0M  4,0K  5,0M   1% /run/lock
+/dev/sda2       512M  6,1M  506M   2% /boot/efi
+tmpfs           198M   80K  198M   1% /run/user/127
+tmpfs           198M   72K  198M   1% /run/user/1000
+dmitriy_zh@TMS-Test:~$
+
+
+=================================================
+Windows
+
+C:\Users\Professional>tasklist
+
+Имя образа                     PID Имя сессии          № сеанса       Память
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0         8 КБ
+System                           4 Services                   0       148 КБ
+Registry                       124 Services                   0    53 040 КБ
+smss.exe                       368 Services                   0       984 КБ
+csrss.exe                      596 Services                   0     4 960 КБ
+wininit.exe                    692 Services                   0     5 564 КБ
+csrss.exe                      700 Console                    1     6 576 КБ
+winlogon.exe                   792 Console                    1     9 900 КБ
+services.exe                   832 Services                   0     8 352 КБ
+lsass.exe                      856 Services                   0    16 844 КБ
+svchost.exe                    980 Services                   0     2 948 КБ
+svchost.exe                   1008 Services                   0    22 104 КБ
+fontdrvhost.exe                324 Console                    1    20 688 КБ
+fontdrvhost.exe                512 Services                   0     2 276 КБ
+svchost.exe                   1032 Services                   0    13 972 КБ
+svchost.exe                   1092 Services                   0     6 828 КБ
+dwm.exe                       1208 Console                    1    77 188 КБ
+svchost.exe                   1312 Services                   0     8 456 КБ
+svchost.exe                   1320 Services                   0    10 152 КБ
+svchost.exe                   1400 Services                   0     5 536 КБ
+svchost.exe                   1428 Services                   0    12 576 КБ
+svchost.exe                   1492 Services                   0    12 308 КБ
+svchost.exe                   1568 Services                   0    10 200 КБ
+svchost.exe                   1576 Services                   0     8 588 КБ
+WUDFHost.exe                  1712 Services                   0     6 068 КБ
+NVDisplay.Container.exe       1772 Services                   0    13 844 КБ
+svchost.exe                   1800 Services                   0     8 644 КБ
+svchost.exe                   1836 Services                   0     5 408 КБ
+svchost.exe                   1880 Services                   0     6 852 КБ
+svchost.exe                    840 Services                   0    11 252 КБ
+svchost.exe                   2096 Services                   0     5 044 КБ
+svchost.exe                   2104 Services                   0    11 396 КБ
+svchost.exe                   2112 Services                   0     6 152 КБ
+svchost.exe                   2120 Services                   0     5 272 КБ
+svchost.exe                   2248 Services                   0     4 892 КБ
+svchost.exe                   2316 Services                   0     6 604 КБ
+Memory Compression            2328 Services                   0   362 428 КБ
+svchost.exe                   2404 Services                   0     8 336 КБ
+svchost.exe                   2444 Services                   0     6 952 КБ
+svchost.exe                   2452 Services                   0     6 904 КБ
+svchost.exe                   2584 Services                   0     6 304 КБ
+svchost.exe                   2672 Services                   0     8 140 КБ
+svchost.exe                   2700 Services                   0     5 580 КБ
+svchost.exe                   2840 Services                   0     5 476 КБ
+svchost.exe                   2900 Services                   0     7 064 КБ
+NVDisplay.Container.exe       2980 Console                    1    33 612 КБ
+svchost.exe                   3016 Services                   0    15 828 КБ
+svchost.exe                   2920 Services                   0    12 360 КБ
+svchost.exe                   3128 Services                   0    15 008 КБ
+svchost.exe                   3204 Services                   0     5 652 КБ
+svchost.exe                   3212 Services                   0     7 924 КБ
+svchost.exe                   3312 Services                   0    11 976 КБ
+svchost.exe                   3476 Services                   0    14 760 КБ
+svchost.exe                   3524 Services                   0    11 304 КБ
+spoolsv.exe                   3572 Services                   0    10 928 КБ
+svchost.exe                   3648 Services                   0    12 800 КБ
+svchost.exe                   3688 Services                   0     6 192 КБ
+svchost.exe                   3696 Services                   0     5 660 КБ
+svchost.exe                   3828 Services                   0     6 604 КБ
+svchost.exe                   3976 Services                   0    25 832 КБ
+svchost.exe                   3984 Services                   0    12 672 КБ
+AxAHCIServiceEx.exe           4024 Services                   0     5 884 КБ
+mDNSResponder.exe             4032 Services                   0     7 028 КБ
+svchost.exe                   4084 Services                   0     5 320 КБ
+svchost.exe                   3548 Services                   0     4 656 КБ
+svchost.exe                   3676 Services                   0     7 608 КБ
+armsvc.exe                    4116 Services                   0     4 816 КБ
+svchost.exe                   4124 Services                   0    17 712 КБ
+nvcontainer.exe               4144 Services                   0    26 208 КБ
+StarWindServiceAE.exe         4172 Services                   0     6 104 КБ
+pservice.exe                  4180 Services                   0     4 836 КБ
+vmware-usbarbitrator64.ex     4192 Services                   0     8 100 КБ
+RvControlSvc.exe              4200 Services                   0    10 116 КБ
+vmnat.exe                     4212 Services                   0     5 396 КБ
+vmnetdhcp.exe                 4224 Services                   0     4 340 КБ
+OfficeClickToRun.exe          4236 Services                   0    23 880 КБ
+AGSService.exe                4256 Services                   0     9 756 КБ
+AGMService.exe                4264 Services                   0     9 040 КБ
+vmware-authd.exe              4300 Services                   0     7 812 КБ
+svchost.exe                   4380 Services                   0     4 504 КБ
+svchost.exe                   4404 Services                   0     7 812 КБ
+svchost.exe                   4500 Services                   0    10 204 КБ
+svchost.exe                   4776 Services                   0     4 904 КБ
+unsecapp.exe                  5348 Services                   0     6 096 КБ
+vmware-hostd.exe              5440 Services                   0    20 948 КБ
+rundll32.exe                  5848 Console                    1     5 588 КБ
+svchost.exe                   6072 Services                   0     6 752 КБ
+svchost.exe                   5932 Services                   0     8 476 КБ
+sihost.exe                    6496 Console                    1    39 840 КБ
+svchost.exe                   6528 Console                    1    12 260 КБ
+svchost.exe                   6568 Console                    1    23 928 КБ
+taskhostw.exe                 6648 Console                    1    14 140 КБ
+svchost.exe                   6760 Services                   0     6 504 КБ
+svchost.exe                   6816 Services                   0    16 876 КБ
+ctfmon.exe                    6824 Console                    1    23 044 КБ
+svchost.exe                   7052 Services                   0    12 380 КБ
+explorer.exe                  7120 Console                    1   158 532 КБ
+svchost.exe                   6800 Console                    1    21 000 КБ
+SearchIndexer.exe             7408 Services                   0    43 496 КБ
+StartMenuExperienceHost.e     7644 Console                    1    58 940 КБ
+RuntimeBroker.exe             7812 Console                    1    23 392 КБ
+SearchApp.exe                 7948 Console                    1   212 608 КБ
+RuntimeBroker.exe             8280 Console                    1    47 740 КБ
+SkypeBackgroundHost.exe       8444 Console                    1     2 524 КБ
+TextInputHost.exe             8708 Console                    1    33 952 КБ
+RuntimeBroker.exe             8944 Console                    1    13 740 КБ
+NVIDIA Web Helper.exe         7856 Console                    1     2 296 КБ
+conhost.exe                   8164 Console                    1       808 КБ
+GoogleCrashHandler.exe        5648 Services                   0     1 116 КБ
+GoogleCrashHandler64.exe      5696 Services                   0       324 КБ
+nvcontainer.exe               9196 Console                    1    23 788 КБ
+RtkNGUI64.exe                 9408 Console                    1    12 388 КБ
+chrome.exe                    9556 Console                    1   274 488 КБ
+chrome.exe                    9572 Console                    1     6 600 КБ
+chrome.exe                    9716 Console                    1   128 620 КБ
+chrome.exe                    9728 Console                    1    91 840 КБ
+chrome.exe                    9820 Console                    1    26 388 КБ
+chrome.exe                    9968 Console                    1    77 368 КБ
+chrome.exe                    9996 Console                    1    43 460 КБ
+svchost.exe                   9204 Services                   0     9 852 КБ
+svchost.exe                  11012 Services                   0     8 304 КБ
+Cortana.exe                  11040 Console                    1    85 184 КБ
+RuntimeBroker.exe            10864 Console                    1    18 332 КБ
+svchost.exe                  11212 Services                   0    17 812 КБ
+svchost.exe                  11256 Console                    1    15 824 КБ
+svchost.exe                  11232 Services                   0     8 424 КБ
+SpeechRuntime.exe            11428 Console                    1    16 196 КБ
+vmware-tray.exe              11476 Console                    1     8 916 КБ
+Bonus.ScreenshotReader.ex    11644 Console                    1    34 880 КБ
+RvRvpnGui.exe                12040 Console                    1    21 124 КБ
+chrome.exe                   12276 Console                    1   148 524 КБ
+VirtualBox.exe               11736 Console                    1    58 620 КБ
+VBoxSVC.exe                  12092 Console                    1    16 112 КБ
+VBoxSDS.exe                  12132 Services                   0     7 140 КБ
+dllhost.exe                  10036 Console                    1    12 044 КБ
+SystemSettings.exe            5368 Console                    1     4 132 КБ
+ApplicationFrameHost.exe      1564 Console                    1    36 204 КБ
+svchost.exe                   2204 Services                   0     8 572 КБ
+SkypeApp.exe                 10788 Console                    1    13 996 КБ
+YourPhone.exe                 9836 Console                    1    15 920 КБ
+RuntimeBroker.exe            12328 Console                    1    13 820 КБ
+RuntimeBroker.exe            12520 Console                    1     8 860 КБ
+SgrmBroker.exe               13028 Services                   0     7 764 КБ
+svchost.exe                  13104 Console                    1    10 836 КБ
+svchost.exe                  13120 Services                   0     9 908 КБ
+svchost.exe                   2604 Services                   0    20 296 КБ
+chrome.exe                   13036 Console                    1    20 716 КБ
+svchost.exe                   9988 Services                   0    14 012 КБ
+UserOOBEBroker.exe            8904 Console                    1     9 008 КБ
+chrome.exe                   13292 Console                    1    71 080 КБ
+chrome.exe                    1592 Console                    1    59 272 КБ
+chrome.exe                   11772 Console                    1    47 528 КБ
+chrome.exe                    1792 Console                    1    60 216 КБ
+chrome.exe                    7476 Console                    1   205 716 КБ
+chrome.exe                    6436 Console                    1    90 708 КБ
+chrome.exe                    3760 Console                    1   304 884 КБ
+svchost.exe                  12700 Services                   0     9 040 КБ
+svchost.exe                  12120 Services                   0     5 476 КБ
+chrome.exe                   11996 Console                    1    19 844 КБ
+chrome.exe                    8992 Console                    1   114 712 КБ
+uTorrent.exe                  5388 Console                    1    56 176 КБ
+chrome.exe                    3260 Console                    1   113 724 КБ
+msedge.exe                    2696 Console                    1    70 724 КБ
+msedge.exe                    5008 Console                    1     7 552 КБ
+msedge.exe                    7828 Console                    1    31 460 КБ
+msedge.exe                     516 Console                    1    27 648 КБ
+msedge.exe                   13056 Console                    1    17 308 КБ
+SecureCRT.v.7.x-kg.exe        6120 Console                    1    28 316 КБ
+svchost.exe                   8520 Services                   0     6 020 КБ
+OneDrive.exe                  3948 Console                    1    75 076 КБ
+ShellExperienceHost.exe       9452 Console                    1    58 692 КБ
+RuntimeBroker.exe            12272 Console                    1    16 916 КБ
+svchost.exe                   5424 Services                   0     7 268 КБ
+chrome.exe                    6008 Console                    1   156 048 КБ
+SecureCRT.exe                 1732 Console                    1    48 048 КБ
+chrome.exe                    8928 Console                    1   109 332 КБ
+chrome.exe                    6776 Console                    1   123 912 КБ
+chrome.exe                    9428 Console                    1    29 228 КБ
+MobaXterm.exe                 2424 Console                    1    40 584 КБ
+XWin_MobaX.exe                7064 Console                    1    14 672 КБ
+MoTTYnew.exe                  8048 Console                    1    16 996 КБ
+MoTTYnew.exe                  1972 Console                    1    16 464 КБ
+MoTTYnew.exe                  2460 Console                    1    16 416 КБ
+chrome.exe                   12992 Console                    1   117 984 КБ
+chrome.exe                    7992 Console                    1    65 540 КБ
+chrome.exe                    5284 Console                    1   110 012 КБ
+chrome.exe                    3656 Console                    1    41 008 КБ
+chrome.exe                    8572 Console                    1    41 356 КБ
+chrome.exe                    4768 Console                    1   114 056 КБ
+MoTTYnew.exe                   936 Console                    1    17 032 КБ
+cmd.exe                       8544 Console                    1     4 356 КБ
+conhost.exe                  13272 Console                    1    13 296 КБ
+VBoxHeadless.exe             10400 Console                    1     6 896 КБ
+conhost.exe                   8108 Console                    1     5 876 КБ
+VBoxHeadless.exe               964 Console                    1     4 672 КБ
+VBoxHeadless.exe              5564 Console                    1    48 688 КБ
+svchost.exe                  12764 Services                   0     6 960 КБ
+notepad.exe                  12420 Console                    1    14 848 КБ
+chrome.exe                   10716 Console                    1   101 352 КБ
+chrome.exe                    2968 Console                    1    41 172 КБ
+chrome.exe                   13060 Console                    1    40 248 КБ
+chrome.exe                   12844 Console                    1    94 460 КБ
+chrome.exe                   11104 Console                    1    62 916 КБ
+MoTTYnew.exe                  6540 Console                    1    18 352 КБ
+chrome.exe                   11072 Console                    1    54 092 КБ
+chrome.exe                    1924 Console                    1    55 240 КБ
+chrome.exe                    8116 Console                    1    69 928 КБ
+chrome.exe                    8296 Console                    1    75 904 КБ
+chrome.exe                   10248 Console                    1    48 632 КБ
+chrome.exe                    7016 Console                    1    29 108 КБ
+chrome.exe                    7516 Console                    1    49 304 КБ
+chrome.exe                    7100 Console                    1    50 736 КБ
+notepad.exe                   5632 Console                    1    16 492 КБ
+chrome.exe                   10820 Console                    1    77 948 КБ
+MoTTYnew.exe                  1140 Console                    1    27 436 КБ
+notepad.exe                   4308 Console                    1    15 976 КБ
+putty.exe                    13216 Console                    1    17 468 КБ
+SnippingTool.exe              2224 Console                    1    49 136 КБ
+chrome.exe                    6316 Console                    1   119 748 КБ
+dllhost.exe                  13916 Console                    1     6 352 КБ
+PaintStudio.View.exe          9944 Console                    1     2 232 КБ
+RuntimeBroker.exe            10332 Console                    1    10 220 КБ
+chrome.exe                   12680 Console                    1    97 644 КБ
+Microsoft.Photos.exe         13628 Console                    1   158 612 КБ
+RuntimeBroker.exe            13908 Console                    1    30 676 КБ
+chrome.exe                   13944 Console                    1    69 088 КБ
+chrome.exe                   11992 Console                    1   114 860 КБ
+chrome.exe                    3380 Console                    1    70 168 КБ
+svchost.exe                   6312 Services                   0     6 596 КБ
+WinSCP.exe                   12772 Console                    1    47 520 КБ
+notepad.exe                  14332 Console                    1    18 020 КБ
+chrome.exe                    5860 Console                    1   151 236 КБ
+svchost.exe                   3404 Services                   0     9 428 КБ
+cmd.exe                       4520 Console                    1     6 088 КБ
+conhost.exe                   4624 Console                    1    25 632 КБ
+audiodg.exe                   8080 Services                   0    13 580 КБ
+svchost.exe                  11500 Services                   0     7 920 КБ
+chrome.exe                   11164 Console                    1   174 244 КБ
+chrome.exe                   14048 Console                    1    29 500 КБ
+tasklist.exe                 12104 Console                    1     8 876 КБ
+WmiPrvSE.exe                  8124 Services                   0     9 992 КБ
+
+C:\Users\Professional>systeminfo
+
+Имя узла:                         USER-PC
+Название ОС:                      Майкрософт Windows 10 Pro
+Версия ОС:                        10.0.19042 Н/Д построение 19042
+Изготовитель ОС:                  Microsoft Corporation
+Параметры ОС:                     Изолированная рабочая станция
+Сборка ОС:                        Multiprocessor Free
+Зарегистрированный владелец:      User Windows
+Зарегистрированная организация:
+Код продукта:                     00330-80000-00000-AA527
+Дата установки:                   18.10.2020, 0:18:40
+Время загрузки системы:           21.02.2023, 9:37:05
+Изготовитель системы:             MSI
+Модель системы:                   MS-7998
+Тип системы:                      x64-based PC
+Процессор(ы):                     Число процессоров - 1.
+                                  [01]: Intel64 Family 6 Model 94 Stepping 3 GenuineIntel ~4008 МГц
+Версия BIOS:                      American Megatrends Inc. 1.10, 16.12.2015
+Папка Windows:                    C:\Windows
+Системная папка:                  C:\Windows\system32
+Устройство загрузки:              \Device\HarddiskVolume1
+Язык системы:                     ru;Русский
+Язык ввода:                       en-us;Английский (США)
+Часовой пояс:                     (UTC+03:00) Москва, Санкт-Петербург
+Полный объем физической памяти:   16 344 МБ
+Доступная физическая память:      9 215 МБ
+Виртуальная память: Макс. размер: 18 344 МБ
+Виртуальная память: Доступна:     7 974 МБ
+Виртуальная память: Используется: 10 370 МБ
+Расположение файла подкачки:      C:\pagefile.sys
+Домен:                            WORKGROUP
+Сервер входа в сеть:              \\USER-PC
+Исправление(я):                   Число установленных исправлений - 4.
+                                  [01]: KB4558130
+                                  [02]: KB4562830
+                                  [03]: KB4577266
+                                  [04]: KB4579311
+Сетевые адаптеры:                 Число сетевых адаптеров - 6.
+                                  [01]: Intel(R) Ethernet Connection (2) I219-V
+                                        Имя подключения: Ethernet
+                                        Состояние:       Носитель отключен
+                                  [02]: D-Link DWA-582 Wireless AC1200 Dual Band PCI Express Adapter
+                                        Имя подключения: Беспроводная сеть
+                                        DHCP включен:    Да
+                                        DHCP-сервер:     192.168.1.1
+                                        IP-адрес
+                                        [01]: 192.168.1.35
+                                        [02]: fe80::e080:7855:e3e0:b4a8
+                                  [03]: VMware Virtual Ethernet Adapter for VMnet1
+                                        Имя подключения: VMware Network Adapter VMnet1
+                                        DHCP включен:    Да
+                                        DHCP-сервер:     192.168.63.254
+                                        IP-адрес
+                                        [01]: 192.168.63.1
+                                        [02]: fe80::fc3e:4473:8399:6e56
+                                  [04]: VMware Virtual Ethernet Adapter for VMnet8
+                                        Имя подключения: VMware Network Adapter VMnet8
+                                        DHCP включен:    Да
+                                        DHCP-сервер:     192.168.111.254
+                                        IP-адрес
+                                        [01]: 192.168.111.1
+                                        [02]: fe80::f854:2606:242f:f74b
+                                  [05]: VirtualBox Host-Only Ethernet Adapter
+                                        Имя подключения: VirtualBox Host-Only Network
+                                        DHCP включен:    Нет
+                                        IP-адрес
+                                        [01]: 192.168.56.1
+                                        [02]: fe80::d08c:2960:b6f1:6ca3
+                                  [06]: Famatech Radmin VPN Ethernet Adapter
+                                        Имя подключения: Radmin VPN
+                                        DHCP включен:    Нет
+                                        IP-адрес
+                                        [01]: 26.137.28.214
+                                        [02]: fe80::491f:5188:13f3:dc9f
+                                        [03]: fdfd::1a89:1cd6
+Требования Hyper-V:               Расширения режима мониторинга виртуальной машины: Да
+                                  Виртуализация включена во встроенном ПО: Да
+                                  Преобразование адресов второго уровня: Да
+                                  Доступно предотвращение выполнения данных: Да

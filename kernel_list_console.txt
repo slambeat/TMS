@@ -1,0 +1,1 @@
+dmitriy_zh@TMS-Test:~$ lsmod > /home/dmitriy_zh/kernel_list.txt 
