@@ -1,0 +1,51 @@
+dmitriy_zh@ubuntu-lvm:~$ sudo lvscan
+[sudo] password for dmitriy_zh:
+  ACTIVE            '/dev/ubuntu-vg/ubuntu-lv' [10.00 GiB] inherit
+  ACTIVE            '/dev/ubuntu-vg/home' [8.00 GiB] inherit
+dmitriy_zh@ubuntu-lvm:~$ sudo lvdisplay
+  --- Logical volume ---
+  LV Path                /dev/ubuntu-vg/ubuntu-lv
+  LV Name                ubuntu-lv
+  VG Name                ubuntu-vg
+  LV UUID                FVqAOS-okGu-fLEo-T9CZ-caAg-3Irc-Ut9wmw
+  LV Write Access        read/write
+  LV Creation host, time ubuntu-server, 2023-03-02 12:30:37 +0000
+  LV Status              available
+  # open                 1
+  LV Size                10.00 GiB
+  Current LE             2560
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           253:0
+
+  --- Logical volume ---
+  LV Path                /dev/ubuntu-vg/home
+  LV Name                home
+  VG Name                ubuntu-vg
+  LV UUID                icIyeT-fjdd-Fjrf-uRQG-5Emh-2Bax-3Tq8C8
+  LV Write Access        read/write
+  LV Creation host, time ubuntu-server, 2023-03-02 12:30:38 +0000
+  LV Status              available
+  # open                 1
+  LV Size                8.00 GiB
+  Current LE             2048
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           253:1
+
+dmitriy_zh@ubuntu-lvm:~$ lsblk
+NAME                      MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0                       7:0    0 111.9M  1 loop /snap/lxd/24322
+loop1                       7:1    0  63.3M  1 loop /snap/core20/1822
+loop2                       7:2    0  49.8M  1 loop /snap/snapd/18357
+sda                         8:0    0    20G  0 disk
+├─sda1                      8:1    0     1M  0 part
+├─sda2                      8:2    0   1.8G  0 part /boot
+└─sda3                      8:3    0  18.2G  0 part
+  ├─ubuntu--vg-ubuntu--lv 253:0    0    10G  0 lvm  /
+  └─ubuntu--vg-home       253:1    0     8G  0 lvm  /home
+sr0                        11:0    1  1024M  0 rom

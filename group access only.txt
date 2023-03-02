@@ -1,0 +1,16 @@
+dmitriy_zh@ubuntu-lvm:/$ groups dmitriy_zh
+dmitriy_zh : dmitriy_zh adm cdrom sudo dip plugdev lxd user2
+dmitriy_zh@ubuntu-lvm:/$ ls -l /home/
+total 28
+drwxr-x--- 4 dmitriy_zh dmitriy_zh  4096 Mar  2 15:00 dmitriy_zh
+drwx------ 2 root       root       16384 Mar  2 12:30 lost+found
+drwxr-x--- 3 user2      user2       4096 Mar  2 14:43 user2
+d---rwx--- 2 user2      user2       4096 Mar  2 14:41 user_only
+dmitriy_zh@ubuntu-lvm:/$ cd /home/user_only/
+dmitriy_zh@ubuntu-lvm:/home/user_only$ cd ..
+dmitriy_zh@ubuntu-lvm:/home$ cd ..
+dmitriy_zh@ubuntu-lvm:/$ su user2
+Password:
+user2@ubuntu-lvm:/$ cd /home/user_only/
+bash: cd: /home/user_only/: Permission denied
+user2@ubuntu-lvm:/$
