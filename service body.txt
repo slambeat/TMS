@@ -1,0 +1,12 @@
+[Unit]
+Description=uptime
+
+[Service]
+Type=simple
+User=dmitriy_zh
+Group=dmitriy_zh
+ExecStart=/bin/bash /home/dmitriy_zh/infinite.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

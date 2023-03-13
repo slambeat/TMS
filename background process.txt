@@ -1,0 +1,31 @@
+dmitriy_zh@ubuntu-lvm:~$ bash /home/dmitriy_zh/infinite.sh >> /home/dmitriy_zh/infinite.txt &
+[1] 2437
+dmitriy_zh@ubuntu-lvm:~$ jobs
+[1]+  Running                 bash /home/dmitriy_zh/infinite.sh >> /home/dmitriy_zh/infinite.txt &
+dmitriy_zh@ubuntu-lvm:~$ top -bn1 | grep 2437
+   2437 dmitriy+  20   0    7500   3972   3520 S   0.0   0.4   0:00.00 bash
+dmitriy_zh@ubuntu-lvm:~$
+
+
+login as: dmitriy_zh
+dmitriy_zh@192.168.1.36's password:
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.15.0-67-generic x86_64)
+15 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Mon Mar 13 15:36:57 2023 from 192.168.1.35
+-----------------------------
+Загрузка процессора(%): 0.0
+Загрузка памяти(Mb): 226
+IP адрес: 192.168.1.36
+-----------------------------
+dmitriy_zh@ubuntu-lvm:~$ top -bn1 | grep 2437
+   2437 dmitriy+  20   0    7500   3976   3520 S   0.0   0.4   0:00.00 bash
+dmitriy_zh@ubuntu-lvm:~$ kill -9 2437
+dmitriy_zh@ubuntu-lvm:~$ top -bn1 | grep 2437
+dmitriy_zh@ubuntu-lvm:~$
+
