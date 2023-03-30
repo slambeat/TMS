@@ -1,0 +1,33 @@
+zhuravel@vm02:~$ ls -la /home/
+total 16
+drwxr-xr-x  4 root     root     4096 Mar 30 14:20 .
+drwxr-xr-x 19 root     root     4096 Mar 30 14:30 ..
+drwxr-x---  2 user1    user1    4096 Mar 30 14:26 user1
+drwxr-x---  5 zhuravel zhuravel 4096 Mar  6 16:15 zhuravel
+zhuravel@vm02:~$ sudo chmod o+r,o+x /home/zhuravel/
+zhuravel@vm02:~$ ls -la /home/
+total 16
+drwxr-xr-x  4 root     root     4096 Mar 30 14:20 .
+drwxr-xr-x 19 root     root     4096 Mar 30 14:30 ..
+drwxr-x---  2 user1    user1    4096 Mar 30 14:26 user1
+drwxr-xr-x  5 zhuravel zhuravel 4096 Mar  6 16:15 zhuravel
+zhuravel@vm02:~$ su user1
+Password:
+user1@vm02:/home/zhuravel$ cat /home/zhuravel/script.sh
+# Get the current usage of CPU and memory
+  cpuUsage=$(top -bn1 | awk '/Cpu/{print $2}')
+  memUsage=$(free -m | awk '/Mem/{print $3}')
+  ipAddr=$(ifconfig | head -2 | awk '/inet / {print $2}')
+# Print the usage
+  echo '-----------------------------'
+  echo "Загрузка процессора(%): $cpuUsage"
+  echo "Загрузка памяти(Mb): $memUsage"
+  echo "IP адрес: $ipAddr"
+  echo '-----------------------------'
+user1@vm02:/home/zhuravel$ bash /home/zhuravel/script.sh
+-----------------------------
+Загрузка процессора(%): 3.2
+Загрузка памяти(Mb): 196
+IP адрес: 10.128.0.34
+-----------------------------
+user1@vm02:/home/zhuravel$

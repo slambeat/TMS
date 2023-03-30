@@ -1,0 +1,88 @@
+dmitriy_zh@ubuntu-lvm:~$ systemctl status systemd-timesyncd.service
+● systemd-timesyncd.service - Network Time Synchronization
+     Loaded: loaded (/lib/systemd/system/systemd-timesyncd.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2023-03-30 08:21:24 UTC; 6h ago
+       Docs: man:systemd-timesyncd.service(8)
+   Main PID: 602 (systemd-timesyn)
+     Status: "Initial synchronization to time server 91.189.91.157:123 (ntp.ubuntu.com)."
+      Tasks: 2 (limit: 1026)
+     Memory: 1.3M
+        CPU: 86ms
+     CGroup: /system.slice/systemd-timesyncd.service
+             └─602 /lib/systemd/systemd-timesyncd
+
+Mar 30 08:21:24 ubuntu-lvm systemd[1]: Starting Network Time Synchronization...
+Mar 30 08:21:24 ubuntu-lvm systemd[1]: Started Network Time Synchronization.
+Mar 30 08:21:27 ubuntu-lvm systemd-timesyncd[602]: Network configuration changed, trying to establish connection.
+Mar 30 08:21:28 ubuntu-lvm systemd-timesyncd[602]: Network configuration changed, trying to establish connection.
+Mar 30 08:21:59 ubuntu-lvm systemd-timesyncd[602]: Initial synchronization to time server 91.189.91.157:123 (ntp.ubuntu.com).
+dmitriy_zh@ubuntu-lvm:~$ ls -l /lib/systemd/systemd-timesyncd
+-rwxr-xr-x 1 root root 55520 Mar  2 12:58 /lib/systemd/systemd-timesyncd
+dmitriy_zh@ubuntu-lvm:~$ ls -l /lib/systemd/systemd-timesyncd/
+ls: cannot access '/lib/systemd/systemd-timesyncd/': Not a directory
+dmitriy_zh@ubuntu-lvm:~$ ls -l /lib/systemd/systemd-timesyncd
+-rwxr-xr-x 1 root root 55520 Mar  2 12:58 /lib/systemd/systemd-timesyncd
+dmitriy_zh@ubuntu-lvm:~$ cat /etc/systemd/timesyncd.conf
+#  This file is part of systemd.
+#
+#  systemd is free software; you can redistribute it and/or modify it under the
+#  terms of the GNU Lesser General Public License as published by the Free
+#  Software Foundation; either version 2.1 of the License, or (at your option)
+#  any later version.
+#
+# Entries in this file show the compile time defaults. Local configuration
+# should be created by either modifying this file, or by creating "drop-ins" in
+# the timesyncd.conf.d/ subdirectory. The latter is generally recommended.
+# Defaults can be restored by simply deleting this file and all drop-ins.
+#
+# See timesyncd.conf(5) for details.
+
+[Time]
+#NTP=
+#FallbackNTP=ntp.ubuntu.com
+#RootDistanceMaxSec=5
+#PollIntervalMinSec=32
+#PollIntervalMaxSec=2048
+dmitriy_zh@ubuntu-lvm:~$ timedatectl
+               Local time: Thu 2023-03-30 15:11:55 UTC
+           Universal time: Thu 2023-03-30 15:11:55 UTC
+                 RTC time: Thu 2023-03-30 15:11:55
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+dmitriy_zh@ubuntu-lvm:~$ sudo nano /etc/systemd/timesyncd.conf
+[sudo] password for dmitriy_zh:
+dmitriy_zh@ubuntu-lvm:~$ systemctl restart systemd-timesyncd.service
+==== AUTHENTICATING FOR org.freedesktop.systemd1.manage-units ===
+Authentication is required to restart 'systemd-timesyncd.service'.
+Authenticating as: dmitriy (dmitriy_zh)
+Password:
+==== AUTHENTICATION COMPLETE ===
+dmitriy_zh@ubuntu-lvm:~$ timedatectl
+               Local time: Thu 2023-03-30 15:13:39 UTC
+           Universal time: Thu 2023-03-30 15:13:39 UTC
+                 RTC time: Thu 2023-03-30 15:13:38
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+dmitriy_zh@ubuntu-lvm:~$ systemctl status systemd-timesyncd.service
+● systemd-timesyncd.service - Network Time Synchronization
+     Loaded: loaded (/lib/systemd/system/systemd-timesyncd.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2023-03-30 15:13:34 UTC; 13s ago
+       Docs: man:systemd-timesyncd.service(8)
+   Main PID: 11601 (systemd-timesyn)
+     Status: "Initial synchronization to time server 94.247.111.10:123 (ru.pool.ntp.org)."
+      Tasks: 2 (limit: 1026)
+     Memory: 1.2M
+        CPU: 43ms
+     CGroup: /system.slice/systemd-timesyncd.service
+             └─11601 /lib/systemd/systemd-timesyncd
+
+Mar 30 15:13:34 ubuntu-lvm systemd[1]: systemd-timesyncd.service: Deactivated successfully.
+Mar 30 15:13:34 ubuntu-lvm systemd[1]: Stopped Network Time Synchronization.
+Mar 30 15:13:34 ubuntu-lvm systemd[1]: Starting Network Time Synchronization...
+Mar 30 15:13:34 ubuntu-lvm systemd[1]: Started Network Time Synchronization.
+Mar 30 15:13:34 ubuntu-lvm systemd-timesyncd[11601]: Initial synchronization to time server 94.247.111.10:123 (ru.pool.ntp.org).
+dmitriy_zh@ubuntu-lvm:~$

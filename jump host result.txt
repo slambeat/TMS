@@ -1,0 +1,42 @@
+dmitriy_zh@ubuntu-lvm:~$ yc compute instance list
++----------------------+------+---------------+---------+---------------+-------------+
+|          ID          | NAME |    ZONE ID    | STATUS  |  EXTERNAL IP  | INTERNAL IP |
++----------------------+------+---------------+---------+---------------+-------------+
+| fhmfidhuq4rp0l2vqtvi | vm01 | ru-central1-a | RUNNING | 158.160.40.24 | 10.128.0.27 |
+| fhmn7n5envc2alkcieua | vm02 | ru-central1-a | RUNNING |               | 10.128.0.34 |
++----------------------+------+---------------+---------+---------------+-------------+
+
+dmitriy_zh@ubuntu-lvm:~$ vm02_jump
+vm02: command not found
+Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.0-67-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu Mar 30 02:16:55 PM UTC 2023
+
+  System load:  0.0                Processes:             132
+  Usage of /:   11.4% of 34.36GB   Users logged in:       0
+  Memory usage: 6%                 IPv4 address for eth0: 10.128.0.34
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+30 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Thu Mar 30 14:14:28 2023 from 10.128.0.27
+-----------------------------
+Загрузка процессора(%): 0.0
+Загрузка памяти(Mb): 184
+IP адрес: 10.128.0.34
+-----------------------------
+zhuravel@vm02:~$

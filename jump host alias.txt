@@ -1,0 +1,1 @@
+alias vm02_jump='vm01=$(yc compute instance list | awk "/vm01/ {print \$10}"); vm02 =$(yc compute instance list | awk "/vm02/ {print \$12}"); ssh -A -J zhuravel@"$vm01" zhuravel@"vm02"'

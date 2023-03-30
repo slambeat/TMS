@@ -1,0 +1,7 @@
+dmitriy_zh@ubuntu-lvm:~$ nano /home/dmitriy_zh/immortal_file
+dmitriy_zh@ubuntu-lvm:~$ cat /home/dmitriy_zh/immortal_file
+haha
+dmitriy_zh@ubuntu-lvm:~$ sudo chattr +i /home/dmitriy_zh/immortal_file
+dmitriy_zh@ubuntu-lvm:~$ sudo rm /home/dmitriy_zh/immortal_file
+rm: cannot remove '/home/dmitriy_zh/immortal_file': Operation not permitted
+dmitriy_zh@ubuntu-lvm:~$
