@@ -1,0 +1,9 @@
+dd if=/dev/urandom of=/dev/stdout count=1 bs=2000000 2>/dev/null | base64 > 2Mb_1
+
+Замена в vim:
+
+:%s/a/ /g
+:%s/A/ /g
+
+Выход с сохранением:
+:wq

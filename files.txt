@@ -1,0 +1,15 @@
+1kb files:
+
+for i in {1..500}; do dd if=/dev/urandom of=/dev/stdout count=1 bs=1000 2>/dev/null | base64 > 1k_$i; done
+
+500kb files:
+
+for i in {1..500}; do dd if=/dev/urandom of=/dev/stdout count=1 bs=500000 2>/dev/null | base64 > 500k_$i; done
+
+1Mb files:
+
+for i in {1..100}; do dd if=/dev/urandom of=/dev/stdout count=1 bs=1000000 2>/dev/null | base64 > 1M_$i; done
+
+rsync:
+
+rsync -zvarp ./homework11/ zhuravel@51.250.82.161:/home/zhuravel/homework11 --min-size=400K
