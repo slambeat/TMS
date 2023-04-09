@@ -1,0 +1,88 @@
+dmitriy_zh@ubuntu-lvm:~$ sudo fdisk -l
+[sudo] password for dmitriy_zh:
+Disk /dev/loop0: 111.95 MiB, 117387264 bytes, 229272 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop1: 63.32 MiB, 66392064 bytes, 129672 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop2: 63.29 MiB, 66359296 bytes, 129608 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop3: 49.84 MiB, 52260864 bytes, 102072 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop4: 49.84 MiB, 52260864 bytes, 102072 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/sda: 20 GiB, 21474836480 bytes, 41943040 sectors
+Disk model: VBOX HARDDISK
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: FB9677C6-BA78-469E-B1FC-84F9102AA3EB
+
+Device       Start      End  Sectors  Size Type
+/dev/sda1     2048     4095     2048    1M BIOS boot
+/dev/sda2     4096  3719167  3715072  1.8G Linux filesystem
+/dev/sda3  3719168 41940991 38221824 18.2G Linux filesystem
+
+
+Disk /dev/sdb: 10 GiB, 10737418240 bytes, 20971520 sectors
+Disk model: VBOX HARDDISK
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/sdc: 10 GiB, 10737418240 bytes, 20971520 sectors
+Disk model: VBOX HARDDISK
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/mapper/ubuntu--vg-ubuntu--lv: 10 GiB, 10737418240 bytes, 20971520 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/mapper/ubuntu--vg-home: 8 GiB, 8589934592 bytes, 16777216 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+dmitriy_zh@ubuntu-lvm:~$ lsblk
+NAME                      MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0                       7:0    0 111.9M  1 loop /snap/lxd/24322
+loop1                       7:1    0  63.3M  1 loop /snap/core20/1852
+loop2                       7:2    0  63.3M  1 loop /snap/core20/1828
+loop3                       7:3    0  49.8M  1 loop /snap/snapd/18357
+loop4                       7:4    0  49.8M  1 loop /snap/snapd/18596
+sda                         8:0    0    20G  0 disk
+├─sda1                      8:1    0     1M  0 part
+├─sda2                      8:2    0   1.8G  0 part /boot
+└─sda3                      8:3    0  18.2G  0 part
+  ├─ubuntu--vg-ubuntu--lv 253:0    0    10G  0 lvm  /
+  └─ubuntu--vg-home       253:1    0     8G  0 lvm  /home
+sdb                         8:16   0    10G  0 disk
+sdc                         8:32   0    10G  0 disk
+sr0                        11:0    1  1024M  0 rom
+

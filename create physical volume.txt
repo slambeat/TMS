@@ -1,0 +1,40 @@
+dmitriy_zh@ubuntu-lvm:~$ sudo pvcreate /dev/sdb /dev/sdc
+  Physical volume "/dev/sdb" successfully created.
+  Physical volume "/dev/sdc" successfully created.
+dmitriy_zh@ubuntu-lvm:~$ sudo pvdisplay
+  --- Physical volume ---
+  PV Name               /dev/sda3
+  VG Name               ubuntu-vg
+  PV Size               <18.23 GiB / not usable 3.00 MiB
+  Allocatable           yes
+  PE Size               4.00 MiB
+  Total PE              4665
+  Free PE               57
+  Allocated PE          4608
+  PV UUID               hf31mE-jqik-wvzg-aZlM-0ic4-wa8o-PpTafw
+
+  "/dev/sdb" is a new physical volume of "10.00 GiB"
+  --- NEW Physical volume ---
+  PV Name               /dev/sdb
+  VG Name
+  PV Size               10.00 GiB
+  Allocatable           NO
+  PE Size               0
+  Total PE              0
+  Free PE               0
+  Allocated PE          0
+  PV UUID               TBV33z-uTwl-qAZn-ZWCX-rkY4-3pm0-RMFSO4
+
+  "/dev/sdc" is a new physical volume of "10.00 GiB"
+  --- NEW Physical volume ---
+  PV Name               /dev/sdc
+  VG Name
+  PV Size               10.00 GiB
+  Allocatable           NO
+  PE Size               0
+  Total PE              0
+  Free PE               0
+  Allocated PE          0
+  PV UUID               bhf6CZ-0PQm-iwHd-Dh1r-jhVs-ZJ3v-LE2MTY
+
+dmitriy_zh@ubuntu-lvm:~$

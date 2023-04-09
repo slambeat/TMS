@@ -1,0 +1,28 @@
+dmitriy_zh@ubuntu-lvm:~$ sudo lvcreate --type raid0 -l 50%VG -n lv01 vg-raid0
+  Using default stripesize 64.00 KiB.
+  Rounding size <5.00 GiB (1279 extents) up to stripe boundary size 5.00 GiB (1280 extents).
+  Logical volume "lv01" created.
+dmitriy_zh@ubuntu-lvm:~$ lsblk
+NAME                        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0                         7:0    0 111.9M  1 loop /snap/lxd/24322
+loop1                         7:1    0  63.3M  1 loop /snap/core20/1852
+loop2                         7:2    0  63.3M  1 loop /snap/core20/1828
+loop3                         7:3    0  49.8M  1 loop /snap/snapd/18357
+loop4                         7:4    0  49.8M  1 loop /snap/snapd/18596
+sda                           8:0    0    20G  0 disk
+├─sda1                        8:1    0     1M  0 part
+├─sda2                        8:2    0   1.8G  0 part /boot
+└─sda3                        8:3    0  18.2G  0 part
+  ├─ubuntu--vg-ubuntu--lv   253:0    0    10G  0 lvm  /
+  └─ubuntu--vg-home         253:1    0     8G  0 lvm  /home
+sdb                           8:16   0    10G  0 disk
+├─sdb1                        8:17   0     5G  0 part
+│ └─vg--raid0-lv01_rimage_0 253:2    0   2.5G  0 lvm
+│   └─vg--raid0-lv01        253:4    0     5G  0 lvm
+└─sdb2                        8:18   0     4G  0 part
+sdc                           8:32   0    10G  0 disk
+├─sdc1                        8:33   0     5G  0 part
+│ └─vg--raid0-lv01_rimage_1 253:3    0   2.5G  0 lvm
+│   └─vg--raid0-lv01        253:4    0     5G  0 lvm
+└─sdc2                        8:34   0     4G  0 part
+sr0                          11:0    1  1024M  0 rom
