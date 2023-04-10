@@ -1,0 +1,51 @@
+dmitriy_zh@ubuntu-lvm:/$ nmap -p0- -v -A -T4 34.118.57.221 -Pn
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-04-10 14:40 UTC
+NSE: Loaded 151 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 14:40
+Completed NSE at 14:40, 0.00s elapsed
+Initiating NSE at 14:40
+Completed NSE at 14:40, 0.00s elapsed
+Initiating NSE at 14:40
+Completed NSE at 14:40, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 14:40
+Completed Parallel DNS resolution of 1 host. at 14:40, 0.12s elapsed
+Initiating Connect Scan at 14:40
+Scanning 221.57.118.34.bc.googleusercontent.com (34.118.57.221) [65536 ports]
+Connect Scan Timing: About 13.30% done; ETC: 14:44 (0:03:22 remaining)
+Connect Scan Timing: About 30.58% done; ETC: 14:43 (0:02:18 remaining)
+Discovered open port 45022/tcp on 34.118.57.221
+Connect Scan Timing: About 44.59% done; ETC: 14:43 (0:01:53 remaining)
+Connect Scan Timing: About 58.62% done; ETC: 14:43 (0:01:25 remaining)
+Connect Scan Timing: About 73.49% done; ETC: 14:43 (0:00:54 remaining)
+Completed Connect Scan at 14:43, 201.74s elapsed (65536 total ports)
+Initiating Service scan at 14:43
+Scanning 1 service on 221.57.118.34.bc.googleusercontent.com (34.118.57.221)
+Completed Service scan at 14:43, 0.10s elapsed (1 service on 1 host)
+NSE: Script scanning 34.118.57.221.
+Initiating NSE at 14:43
+Completed NSE at 14:43, 1.42s elapsed
+Initiating NSE at 14:43
+Completed NSE at 14:43, 0.00s elapsed
+Initiating NSE at 14:43
+Completed NSE at 14:43, 0.00s elapsed
+Nmap scan report for 221.57.118.34.bc.googleusercontent.com (34.118.57.221)
+Host is up (0.047s latency).
+Not shown: 65532 filtered ports
+PORT      STATE  SERVICE       VERSION
+22/tcp    closed ssh
+3389/tcp  closed ms-wbt-server
+5000/tcp  closed upnp
+45022/tcp open   ssh           OpenSSH 8.9p1 Ubuntu 3ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 14:43
+Completed NSE at 14:43, 0.00s elapsed
+Initiating NSE at 14:43
+Completed NSE at 14:43, 0.00s elapsed
+Initiating NSE at 14:43
+Completed NSE at 14:43, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 203.75 seconds

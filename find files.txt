@@ -1,0 +1,6 @@
+dmitriy_zh@ubuntu-lvm:~$ find -mtime -1 -user dmitriy_zh
+dmitriy_zh@ubuntu-lvm:~$ find -mtime -1 -user root
+
+-mtime - выводим файлы, измененные менее чем(-), более чем(+), или ровно n*24 назад
+
+-user - выводим файлы, принадлежащие конкретному пользователю
