@@ -1,9 +1,0 @@
-dmitriy_zh@ubuntu-lvm:~$ sudo nmap -sV 34.118.57.221
-Starting Nmap 7.80 ( https://nmap.org ) at 2023-04-09 22:49 UTC
-Nmap scan report for 221.57.118.34.bc.googleusercontent.com (34.118.57.221)
-Host is up (0.059s latency).
-Not shown: 997 filtered ports
-PORT     STATE  SERVICE       VERSION
-22/tcp   closed ssh
-3389/tcp closed ms-wbt-server
-5000/tcp closed upnp
