@@ -1,0 +1,3 @@
+dmitriy_zh@ubuntu-lvm:~$ bash /home/dmitriy_zh/script_1_1_spaces_v2.sh this is test
+thisistest
+dmitriy_zh@ubuntu-lvm:~$ 

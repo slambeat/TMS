@@ -1,0 +1,6 @@
+dmitriy_zh@ubuntu-lvm:~$ bash /home/dmitriy_zh/script_1_2_array.sh
+bar,
+blah,
+foo,
+test,
+dmitriy_zh@ubuntu-lvm:~$
